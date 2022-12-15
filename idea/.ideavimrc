@@ -1,0 +1,18 @@
+let mapleader=" "
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+
+"切换到normal模式"
+inoremap jk <ESC>
+"切换到command模式"
+"nnoremap <Space> :
+"nnoremap <leader>wq :wq<CR>
+"gcc注释"
+nnoremap gcc :action CommentByLineComment<CR>
+"跳转到定义的地方"
+nnoremap <leader>d :action GotoDeclaration<CR>
+"跳转到实现类"
+nnoremap <leader>i :action GotoImplementation<CR>
+"跳转到父类"
+nnoremap <leader>s :action GotoSuperMethod<CR>
+"打断点"
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>

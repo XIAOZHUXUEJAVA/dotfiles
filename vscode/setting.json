@@ -1,0 +1,70 @@
+{
+    "workbench.colorTheme": "Dark (Molokai)",
+    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    "editor.fontligatures": false,
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.profiles.windows": {
+        "gitbash": { // 注意key的命名，之前命名为Git Bash，重启Vscode后怎么也显示不出来
+            // 设置并添加git-bash的local安装路径
+            "path": "D:\\Psoftware\\Git\\bin\\bash.exe",
+            "args": [
+                "-i",
+                "-l"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "gitbash",
+    "security.workspace.trust.untrustedFiles": "open",
+    "vetur.validation.template": false,
+    "explorer.compactFolders": false,
+    "cmake.configureSettings": {}, // 对应上面的key
+    "vetur.completion.scaffoldSnippetSources": {
+        "workspace": "💼",
+        "user": "🗒️",
+        "vetur": "✌"
+    },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/myfile"
+            ],
+            "url": "schemaURL"
+        }
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "eslint.enable": false,
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "node"
+    },
+    "open-in-browser.default": "{\"open-in-browser.default\":\"Chrome\"}",
+    "editor.fontSize": 15,
+    // 注释颜色
+    // "editor.tokenColorCustomizations": {
+    //     "comments": "#17e917"
+    // },
+    "settingsSync.ignoredSettings": [],
+    "eslint.codeAction.showDocumentation": {
+        "enable": false
+    },
+    // 离开插入模式
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": []
+}
