@@ -1,70 +1,137 @@
 {
-    "workbench.colorTheme": "Dark (Molokai)",
-    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
-    "editor.fontligatures": false,
-    "workbench.sideBar.location": "right",
-    "terminal.integrated.profiles.windows": {
-        "gitbash": { // 注意key的命名，之前命名为Git Bash，重启Vscode后怎么也显示不出来
-            // 设置并添加git-bash的local安装路径
-            "path": "D:\\Psoftware\\Git\\bin\\bash.exe",
-            "args": [
-                "-i",
-                "-l"
-            ]
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "gitbash",
-    "security.workspace.trust.untrustedFiles": "open",
-    "vetur.validation.template": false,
-    "explorer.compactFolders": false,
-    "cmake.configureSettings": {}, // 对应上面的key
-    "vetur.completion.scaffoldSnippetSources": {
-        "workspace": "💼",
-        "user": "🗒️",
-        "vetur": "✌"
-    },
-    "json.schemas": [
+  // 主题
+  "workbench.colorTheme": "One Dark Pro",
+  // 字体
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  // 设置连等 ==
+  "editor.fontLigatures": true,
+  // 工作区位置放大右边
+  "workbench.sideBar.location": "right",
+  // 高亮当前缩进线
+  "editor.guides.bracketPairs": "active",
+  "terminal.integrated.profiles.windows": {
+    "gitbash": {
+      // 注意key的命名，之前命名为Git Bash，重启Vscode后怎么也显示不出来
+      // 设置并添加git-bash的local安装路径
+      "path": "D:\\Psoftware\\Git\\bin\\bash.exe",
+      "args": [
+        "-i",
+        "-l"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "gitbash",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vetur.validation.template": false,
+  "explorer.compactFolders": false,
+  "vetur.completion.scaffoldSnippetSources": {
+    "workspace": "💼",
+    "user": "🗒️",
+    "vetur": "✌"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/myfile"
+      ],
+      "url": "schemaURL"
+    }
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.enable": false,
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "node"
+  },
+  "open-in-browser.default": "Chrome",
+  "editor.fontSize": 15,
+  // 注释颜色
+  // "editor.tokenColorCustomizations": {
+  //     "comments": "#17e917"
+  // },
+  "settingsSync.ignoredSettings": [],
+  "eslint.codeAction.showDocumentation": {
+    "enable": false
+  },
+  // vim离开插入模式重置映射键
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+
+      // u undo 撤销键映射到vscode的ctrl + z, 由于vim的对我个人而言太难用了
+      "before": [
+        "u"
+      ],
+      "after": ["ctrl+z"],
+      "commands": [
         {
-            "fileMatch": [
-                "/myfile"
-            ],
-            "url": "schemaURL"
+          "command": "undo",
+          "args": []
         }
-    ],
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      ]
     },
-    "js/ts.implicitProjectConfig.experimentalDecorators": true,
-    "eslint.enable": false,
-    "debug.javascript.defaultRuntimeExecutable": {
-        "pwa-node": "node"
-    },
-    "open-in-browser.default": "{\"open-in-browser.default\":\"Chrome\"}",
-    "editor.fontSize": 15,
-    // 注释颜色
-    // "editor.tokenColorCustomizations": {
-    //     "comments": "#17e917"
-    // },
-    "settingsSync.ignoredSettings": [],
-    "eslint.codeAction.showDocumentation": {
-        "enable": false
-    },
-    // 离开插入模式
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-    ],
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": []
+    {
+
+      // 跳转到函数、变量定义处
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "g",
+        "d"
+      ]
+    }
+  ],
+  // leader 设置为 空格
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  // vscode 图标
+  "workbench.iconTheme": "vscode-great-icons",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-c": false,
+    "<C-v": false
+  },
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "markdown.preview.breaks": true,
+  "vetur.completion.autoImport": true,
+  "emmet.triggerExpansionOnTab": true,
+  // c++ 代码风格设置为类java
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4 }",
+  // 设置行距
+  "editor.lineHeight": 1.7,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // "rust-analyzer.inlayHints.enable": true,
+  // "rust-analyzer.inlayHints.chainingHints": true,
+  // "rust-analyzer.inlayHints.parameterHints": true 
 }
