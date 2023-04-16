@@ -3,9 +3,6 @@
 " 设置编码格式
 set enc=utf-8
 
- " 去掉输入错误的提示音
-set noeb
-
 " Tab键的宽度
 set tabstop=4
  
@@ -14,6 +11,9 @@ set softtabstop=4
  
 " 显示行号
 set number
+
+" 与系统剪切板互通
+set clipboard+=unnamed
  
 " ====================快捷键映射设置====================
 

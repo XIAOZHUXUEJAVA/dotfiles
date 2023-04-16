@@ -79,3 +79,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 export LANG=en_US.UTF-8
 ```
+
+### 关闭防火墙
+
+```shell
+sudo systemctl stop firewalld
+```

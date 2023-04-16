@@ -1,6 +1,4 @@
 {
-  // 主题
-  "workbench.colorTheme": "One Dark Pro",
   // 字体
   "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
   // 设置连等 ==
@@ -105,8 +103,11 @@
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
-  // vscode 图标
+
+  // vscode 大图标
   "workbench.iconTheme": "vscode-great-icons",
+
+  // 设置vim  ctrl相关快捷键无效
   "vim.handleKeys": {
     "<C-d>": true,
     "<C-s>": false,
@@ -122,6 +123,7 @@
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, UseTab: Never, IndentWidth: 4, TabWidth: 4, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4 }",
   // 设置行距
   "editor.lineHeight": 1.7,
+
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -131,7 +133,19 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  // "rust-analyzer.inlayHints.enable": true,
-  // "rust-analyzer.inlayHints.chainingHints": true,
-  // "rust-analyzer.inlayHints.parameterHints": true 
+  "picgo.picBed.current": "github",
+  "picgo.picBed.github.repo": "XIAOZHUXUEJAVA/GraphBed",
+  "picgo.picBed.github.branch": "main",
+  "picgo.picBed.github.customUrl": "https://raw.githubusercontent.com/XIAOZHUXUEJAVA/GraphBed/main",
+  "picgo.picBed.github.token": "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",
+  "picgo.picBed.github.path": "img/",
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "typescript.disableAutomaticTypeAcquisition": true,
+
+  // Vscode主题
+  "workbench.colorTheme": "Atom One Light", 
 }
