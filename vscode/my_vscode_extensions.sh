@@ -1,0 +1,15 @@
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --install-extension ms-vscode.remote-explorer
+code --install-extension ms-vscode.remote-server
+code --install-extension octref.vetur
+code --install-extension redhat.vscode-xml
+code --install-extension Spades.vs-picgo
+code --install-extension techer.open-in-browser
+code --install-extension usernamehw.errorlens
+code --install-extension vscodevim.vim
+code --install-extension Vue.volar
+code --install-extension xabikos.ReactSnippets
+code --install-extension yandeu.five-server
