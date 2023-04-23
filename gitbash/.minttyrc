@@ -1,0 +1,6 @@
+Font=JetBrains Mono
+FontHeight=12
+Transparency=medium
+ThemeFile=dracula
+Term=xterm-256color
+CursorType=block
