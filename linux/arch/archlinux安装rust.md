@@ -4,6 +4,9 @@
 
 ## install rust
 
+```shell
+sudo pacman -S gcc cmake
+```
 
 
 ```shell

@@ -1,0 +1,22 @@
+code --install-extension Extensions installed on Dev Container: OhXiaozhuDocker:
+code --install-extension antfu.slidev
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.code-runner
+code --install-extension golang.go
+code --install-extension ms-vscode.cmake-tools
+code --install-extension ms-vscode.cpptools
+code --install-extension octref.vetur
+code --install-extension redhat.java
+code --install-extension rust-lang.rust-analyzer
+code --install-extension Spades.vs-picgo
+code --install-extension tamasfe.even-better-toml
+code --install-extension twxs.cmake
+code --install-extension vadimcn.vscode-lldb
+code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
+code --install-extension vscjava.vscode-java-pack
+code --install-extension vscjava.vscode-java-test
+code --install-extension vscjava.vscode-maven
